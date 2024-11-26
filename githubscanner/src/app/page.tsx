@@ -25,7 +25,7 @@ export default function Home() {
         { headers: { 'Content-Type': 'application/json' } }
       );
 
-      console.log("Result from the API: ", data.data.message[0]);
+      console.log("Result from the API: ", data);
       alert(data.data.message[0]);
       setResults(data.data.results || []);
     } catch (error) {
