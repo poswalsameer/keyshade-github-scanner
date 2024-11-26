@@ -14,7 +14,7 @@ const GITHUB_API_BASE_URL = 'https://api.github.com/repos';
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN; 
 
 
-export async function POST(req: NextRequest, res: NextResponse) {
+export async function POST(req: NextRequest) {
     
   if (req.method !== 'POST') {
     return NextResponse.json(
